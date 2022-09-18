@@ -82,7 +82,7 @@ h1 {
 div.seccion-publicaciones {
     background-color: #333333;
     padding: 10px 0;
-    margin: 0;
+    margin-left: 0;
 }
 
 h1.seccion {
@@ -91,6 +91,7 @@ h1.seccion {
 
 h1 span.bullet-seccion {
     color: #7d3d4d;
+    margin-left: 10px;
 }
 
 div.categorias {
@@ -333,6 +334,11 @@ footer {
 //books
 
 .bookshelf {
+    .card-text {
+
+        font-size:16px;
+
+    }
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
