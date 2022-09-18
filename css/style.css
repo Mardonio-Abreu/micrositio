@@ -9,13 +9,7 @@
 header {
   background-color: #333333;
 }
-
-header > div {
-  max-width: 1100px;
-  margin: auto;
-}
-
-header div.logos {
+header .logos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -23,31 +17,32 @@ header div.logos {
   border-bottom: 4px solid #7d3d4d;
   padding-bottom: 10px;
 }
-
-header div.menu {
+header .menu {
   margin: auto;
   padding: 20px 0 30px 0;
   text-align: center;
 }
-
-header a {
+header .menu a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
   margin: 0 20px;
   vertical-align: middle;
 }
-
 header p {
   margin: 0;
 }
-
-.magnifying_glass {
+header .magnifying_glass {
   padding: 5px;
   width: 40px;
 }
 
-/* Termina cabeza */
+.pleca img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Inicia el cuerpo */
 div.cuerpo {
   max-width: 1100px;
@@ -59,7 +54,6 @@ div.cuerpo {
 h1 {
   font-family: "aleobold";
   font-size: 1.8rem;
-  max-width: 1100px;
   margin: auto;
 }
 
@@ -121,7 +115,6 @@ figcaption a {
 }
 
 .dos-columnas-redes {
-  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -216,14 +209,14 @@ footer {
 
 /* publish */
 .publish-container {
+  margin: 5px;
   display: grid;
   grid-template-columns: 15% 85%;
   grid-template-rows: 80% 20%;
   grid-template-areas: "gray-left-column main-text" "gray-left-column pdf-links";
 }
-
 .publish-container h3 {
-  font-family: aleobold;
+  font-family: "aleobold";
   color: #ab9d7a;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
@@ -231,6 +224,7 @@ footer {
 .publish-container p {
   margin-top: 1.5;
   margin-bottom: 1.5%;
+  margin-right: 10px;
 }
 .publish-container hr {
   width: 1px solid #ab9d7a;
@@ -241,7 +235,7 @@ footer {
 }
 .pdf-links a {
   text-decoration: none;
-  font-family: aleobold;
+  font-family: "aleobold";
   color: #ab9d7a;
 }
 .pdf-links img {
@@ -261,6 +255,23 @@ footer {
 
 .pdf-links {
   grid-area: pdf-links;
+}
+
+.searchbar {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.searchbar a {
+  text-decoration: none;
+  color: dimgray;
+  margin: 10px;
+}
+
+.style hr {
+  width: 5px solid #ab9d7a;
 }
 
 .bookshelf {
@@ -302,6 +313,10 @@ footer {
   grid-area: book8;
 }
 
+.card {
+  margin: 10px;
+}
+
 .bulletinboard {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -312,9 +327,19 @@ footer {
 .news {
   grid-area: news;
 }
+.news h3 {
+  margin: 10px;
+  font-family: "aleobold";
+  color: #ab9d7a;
+}
 
 .notice {
   grid-area: notice;
+}
+.notice h3 {
+  margin: 10px;
+  font-family: "aleobold";
+  color: #ab9d7a;
 }
 
 /*# sourceMappingURL=style.css.map */

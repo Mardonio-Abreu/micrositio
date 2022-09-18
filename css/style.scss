@@ -11,49 +11,57 @@ $main-color: #333333;
 /* Inicia cabeza */
 
 header {
-    background-color: #333333;
+
+    background-color: $main-color;
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 4px solid #7d3d4d;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        margin: auto;
+        padding: 20px 0 30px 0;
+        text-align: center;
+
+        a {
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 20px;
+            vertical-align: middle;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    
+
+    .magnifying_glass {
+        padding: 5px;
+        width: 40px;
+    }
+
 }
 
 
-header>div {
-    max-width: 1100px;
-    margin: auto;
+//pleca
+
+.pleca {
+
+    img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
-
-header div.logos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: 4px solid #7d3d4d;
-    padding-bottom: 10px;
-}
-
-header div.menu {
-    margin: auto;
-    padding: 20px 0 30px 0;
-    text-align: center;
-}
-
-header a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    margin: 0 20px;
-    vertical-align: middle;
-}
-
-header p {
-    margin: 0;
-}
-
-.magnifying_glass {
-    padding: 5px;
-    width: 40px;
-}
-
-
-/* Termina cabeza */
 
 /* Inicia el cuerpo */
 
@@ -67,7 +75,6 @@ div.cuerpo {
 h1 {
     font-family: 'aleobold';
     font-size: 1.8rem;
-    max-width: 1100px;
     margin: auto;
 }
 
@@ -134,7 +141,7 @@ figcaption a {
 }
 
 .dos-columnas-redes {
-    max-width: 1100px;
+    //max-width: 1100px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -225,25 +232,28 @@ footer {
 /* Termina el pie */
 
 //carousel
-
 .carousel {
-    width:1100px;
-    height:auto;
-  }
+
+
+    width: 1100px;
+    height: auto;
+
+
+}
+
 
 /* publish */
 
 .publish-container {
+
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 80% 20%;
     grid-template-areas: "gray-left-column main-text"
-                         "gray-left-column pdf-links";
-}
+        "gray-left-column pdf-links";
 
-.publish-container {
     h3 {
-        font-family: aleobold;
+        font-family: 'aleobold';
         color: #ab9d7a;
         margin-top: 2.5%;
         margin-bottom: 2.5%;
@@ -252,6 +262,7 @@ footer {
     p {
         margin-top: 1.5;
         margin-bottom: 1.5%;
+        margin-right: 10px;
     }
 
     hr {
@@ -265,7 +276,7 @@ footer {
 
     a {
         text-decoration: none;
-        font-family: aleobold;
+        font-family: 'aleobold';
         color: #ab9d7a;
     }
 
@@ -291,7 +302,32 @@ footer {
 }
 
 
+//searchbar
+.searchbar {
 
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+        color: dimgray;
+        margin: 10px;
+
+    }
+
+
+}
+
+.style {
+
+    hr {
+        width: 5px solid #ab9d7a;
+    }
+}
 
 
 //books
@@ -305,11 +341,14 @@ footer {
 }
 
 .book1 {
+
     grid-area: book1;
 }
 
 .book2 {
+
     grid-area: book2;
+
 }
 
 .book3 {
@@ -317,7 +356,9 @@ footer {
 }
 
 .book4 {
+
     grid-area: book4;
+
 }
 
 .book5 {
@@ -326,17 +367,26 @@ footer {
 
 .book6 {
     grid-area: book6;
+
 }
 
 .book7 {
+
     grid-area: book7;
+
 }
 
 .book8 {
+
     grid-area: book8;
+
 }
 
 //News
+
+.card {
+    margin: 10px;
+}
 
 .bulletinboard {
     display: grid;
@@ -348,8 +398,20 @@ footer {
 
 .news {
     grid-area: news;
+
+    h3 {
+        margin: 10px;
+        font-family: 'aleobold';
+        color: #ab9d7a;
+    }
 }
 
 .notice {
     grid-area: notice;
+
+    h3 {
+        margin: 10px;
+        font-family: 'aleobold';
+        color: #ab9d7a;
+    }
 }
