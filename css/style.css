@@ -116,6 +116,7 @@ figcaption a {
 }
 
 .dos-columnas-redes {
+  max-width: 1100px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -203,7 +204,7 @@ footer {
 }
 
 /* Termina el pie */
-.carousel {
+.carousel img {
   width: 1100px;
   height: auto;
 }
@@ -343,6 +344,132 @@ footer {
   margin: 10px;
   font-family: "aleobold";
   color: #ab9d7a;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  div.cuerpo {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  div.categorias {
+    max-width: 50%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .dos-columnas-redes {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #secciones-foot {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .carousel img {
+    width: 50%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  div.cuerpo {
+    max-width: 50%;
+  }
+
+  div.categorias {
+    max-width: 50%;
+    padding-top: 30px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .dos-columnas-redes {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #secciones-foot {
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .carousel img {
+    width: 50%;
+    height: auto;
+  }
+
+  .bookshelf {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25;
+    grid-template-areas: "book1 book2" "book3 book4" "book5 book6" "book7 book8";
+  }
+  .bookshelf .card-text {
+    font-size: 16px;
+  }
+
+  .book1 {
+    grid-area: book1;
+  }
+
+  .book2 {
+    grid-area: book2;
+  }
+
+  .book3 {
+    grid-area: book3;
+  }
+
+  .book4 {
+    grid-area: book4;
+  }
+
+  .book5 {
+    grid-area: book5;
+  }
+
+  .book6 {
+    grid-area: book6;
+  }
+
+  .book7 {
+    grid-area: book7;
+  }
+
+  .book8 {
+    grid-area: book8;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
