@@ -1,5 +1,5 @@
 $main-color: #333333;
-$width:100%;
+$width: 100%;
 
 * {
     margin: 0;
@@ -61,7 +61,6 @@ header {
 
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 }
 
@@ -346,6 +345,11 @@ footer {
 //books
 
 .bookshelf {
+
+    .card {
+        width: 200px;
+    }
+
     .card-text {
 
         font-size: 16px;
@@ -432,109 +436,52 @@ footer {
         margin: 10px;
         font-family: 'aleobold';
         color: #ab9d7a;
+
     }
 }
 
-@media screen and (max-width:768px) and (min-width:481px) {
 
-    .pleca {
+@media (min-width: 481px) and (max-width: 767px) {
 
-        img {
-    
-            width: 50%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    div.cuerpo {
-        max-width: 50%;
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    div.categorias {
-        max-width: 50%;
-        padding-top: 30px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .dos-columnas-redes {
-        max-width: 50%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #secciones-foot {
-        max-width: 50%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        color: #fff;
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-    }
 
     .carousel {
 
         img {
 
-            width: 50%;
+            width: 97%;
             height: auto;
+
 
         }
 
 
     }
+
+    .bookshelf {
+        .card-text {
+
+            font-size: 16px;
+
+        }
+
+        .card {
+            width: 200px;
+            margin-left: 15%;
+        }
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-areas: "book1 book2"
+        "book3 book4"
+        "book5 book6"
+        "book7 book8";
+    }
 }
 
-@media screen and (max-width:480px) and (min-width:320px) {
+@media (max-width: 480px) {
 
-    div.cuerpo {
-        max-width: 50%;
 
-    }
-
-    div.categorias {
-        max-width: 50%;
-        padding-top: 30px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .dos-columnas-redes {
-        max-width: 50%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #secciones-foot {
-        max-width: 50%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        color: #fff;
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-    }
 
     .carousel {
 
@@ -556,55 +503,33 @@ footer {
 
         }
 
+        .card {
+            width: 200px;
+            margin-left: 15%;
+        }
+
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 25% 25% 25;
-        grid-template-areas: "book1 book2"
-        "book3 book4"
-        "book5 book6"
-        "book7 book8";
+        grid-template-columns: 100%;
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
+        grid-template-areas: 
+        "book1" 
+        "book2"
+        "book3" 
+        "book4"
+        "book5" 
+        "book6"
+        "book7" 
+        "book8";
     }
 
-    .book1 {
-
-        grid-area: book1;
+    .bulletinboard {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas: 
+        "news" 
+        "news"
+        "notice"
+        "notice";
     }
-
-    .book2 {
-
-        grid-area: book2;
-
-    }
-
-    .book3 {
-        grid-area: book3;
-    }
-
-    .book4 {
-
-        grid-area: book4;
-
-    }
-
-    .book5 {
-        grid-area: book5;
-    }
-
-    .book6 {
-        grid-area: book6;
-
-    }
-
-    .book7 {
-
-        grid-area: book7;
-
-    }
-
-    .book8 {
-
-        grid-area: book8;
-
-    }
-
 }

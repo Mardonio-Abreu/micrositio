@@ -40,7 +40,6 @@ header .magnifying_glass {
 .pleca img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 /* Inicia el cuerpo */
@@ -284,6 +283,9 @@ footer {
   grid-template-rows: 50% 50%;
   grid-template-areas: "book1 book2 book3 book4" "book5 book6 book7 book8";
 }
+.bookshelf .card {
+  width: 200px;
+}
 .bookshelf .card-text {
   font-size: 16px;
 }
@@ -349,90 +351,27 @@ footer {
   color: #ab9d7a;
 }
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .pleca img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  div.cuerpo {
-    max-width: 50%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  div.categorias {
-    max-width: 50%;
-    padding-top: 30px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .dos-columnas-redes {
-    max-width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #secciones-foot {
-    max-width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #fff;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-  }
-
+@media (min-width: 481px) and (max-width: 767px) {
   .carousel img {
-    width: 50%;
+    width: 97%;
     height: auto;
   }
+
+  .bookshelf {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "book1 book2" "book3 book4" "book5 book6" "book7 book8";
+  }
+  .bookshelf .card-text {
+    font-size: 16px;
+  }
+  .bookshelf .card {
+    width: 200px;
+    margin-left: 15%;
+  }
 }
-@media screen and (max-width: 480px) and (min-width: 320px) {
-  div.cuerpo {
-    max-width: 50%;
-  }
-
-  div.categorias {
-    max-width: 50%;
-    padding-top: 30px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .dos-columnas-redes {
-    max-width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #secciones-foot {
-    max-width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #fff;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-  }
-
+@media (max-width: 480px) {
   .carousel img {
     width: 50%;
     height: auto;
@@ -440,44 +379,23 @@ footer {
 
   .bookshelf {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25% 25;
-    grid-template-areas: "book1 book2" "book3 book4" "book5 book6" "book7 book8";
+    grid-template-columns: 100%;
+    grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-areas: "book1" "book2" "book3" "book4" "book5" "book6" "book7" "book8";
   }
   .bookshelf .card-text {
     font-size: 16px;
   }
-
-  .book1 {
-    grid-area: book1;
+  .bookshelf .card {
+    width: 200px;
+    margin-left: 15%;
   }
 
-  .book2 {
-    grid-area: book2;
-  }
-
-  .book3 {
-    grid-area: book3;
-  }
-
-  .book4 {
-    grid-area: book4;
-  }
-
-  .book5 {
-    grid-area: book5;
-  }
-
-  .book6 {
-    grid-area: book6;
-  }
-
-  .book7 {
-    grid-area: book7;
-  }
-
-  .book8 {
-    grid-area: book8;
+  .bulletinboard {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "news" "news" "notice" "notice";
   }
 }
 
