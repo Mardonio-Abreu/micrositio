@@ -11394,7 +11394,7 @@ footer p {
   font-weight: bold;
 }
 .categories .card:hover {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 @media (max-width: 991.98px) {
   .categories .card {
@@ -11437,18 +11437,47 @@ footer p {
   color: rgb(137, 137, 137);
 }
 
-.container-books {
+.container-items {
   padding: 2rem 0;
 }
 
-.card-book {
+.card-item {
   margin-bottom: 2rem;
   text-decoration: none;
   color: black;
 }
-.card-book .card-body {
+.card-item .card-body {
   pading-top: 0;
 }
-.card-book .card-title {
+.card-item .card-title {
   font-weight: 600;
+}
+.card-item img {
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+.card-item:hover img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.container-item {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.item-detail-img {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #C3C3C3;
+}
+
+.item-detail-links p {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.item-detail-links p:first-child {
+  margin-bottom: 1rem;
+}
+.item-detail-links a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
