@@ -1,11 +1,12 @@
 body {
   overflow: hidden;
+  height: 100%;
 }
 
 .loader {
   background: #333333;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   width: 100%;
   height: 100%;

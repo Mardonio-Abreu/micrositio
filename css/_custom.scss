@@ -4,6 +4,7 @@ html {
 body {
     &.loaded {
         overflow: auto;
+        height: auto;
         .loader {
             opacity: 0;
         }

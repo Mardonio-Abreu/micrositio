@@ -11210,6 +11210,7 @@ html {
 
 body.loaded {
   overflow: auto;
+  height: auto;
 }
 body.loaded .loader {
   opacity: 0;
@@ -11395,6 +11396,11 @@ footer p {
 .categories .card:hover {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+@media (max-width: 991.98px) {
+  .categories .card {
+    margin-bottom: 1.5rem;
+  }
+}
 @media (max-width: 575.98px) {
   .categories .card {
     height: 300px;
@@ -11411,4 +11417,38 @@ footer p {
 }
 .categories .card-4 {
   background-image: url(../img/catalogo-h.jpg);
+}
+
+.searchbar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+.searchbar a {
+  text-decoration: none;
+  color: dimgray;
+  margin: 10px;
+}
+.searchbar label {
+  color: rgb(137, 137, 137);
+}
+
+.container-books {
+  padding: 2rem 0;
+}
+
+.card-book {
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: black;
+}
+.card-book .card-body {
+  pading-top: 0;
+}
+.card-book .card-title {
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

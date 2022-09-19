@@ -9,7 +9,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $("body").addClass("completed");
     }, 310);
-  }, 1000);
+  }, 300);
 });
 
 (function () {

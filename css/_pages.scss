@@ -1,3 +1,4 @@
+// HOME
 .categories {
   margin: 2rem 0;
   .card {
@@ -16,6 +17,9 @@
     }
     &:hover{
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    @include media-breakpoint-down(lg){
+      margin-bottom: 1.5rem;
     }
     @include media-breakpoint-down(sm){
       height: 300px;
@@ -36,3 +40,39 @@
 
   
 }
+
+// BOOKS / EBOOKS / MAGAZINES
+
+//searchbar
+.searchbar {
+  margin-top: 50px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding:  .5rem;
+  a {
+    text-decoration: none;
+    color: dimgray;
+    margin: 10px;
+}
+  label {
+    color: rgb(137, 137, 137);
+  }
+}
+.container-books {
+  padding: 2rem 0;
+}
+.card-book {
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: black;
+  .card-body {
+    pading-top: 0;
+  }
+  .card-title {
+    font-weight: 600;
+  }
+}
+
