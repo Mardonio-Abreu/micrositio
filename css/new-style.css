@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #333333;
+}
+header a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+header .container .pleca p img {
+  width: 95%;
+  height: 100%;
+}
+header .container .menu {
+  background-color: #333333;
+}
+header .container .seccion {
+  background-color: #333333;
+  color: #ab9d7a;
+}
+header .container .seccion h1 span .bullet-seccion {
+  color: #7d3d4d;
+}
+
+footer .container .social-media {
+  padding: 15px;
+  background-color: #bdaf8c;
+}
+footer .container .social-media a {
+  text-decoration: none;
+  border: solid 2px #333333;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
+  color: #333333;
+  font-size: 16px;
+}
+footer .container .social-media a:visited {
+  color: #333333;
+}
+footer .container .sections {
+  background-color: #333333;
+}
+footer .container .sections h5 {
+  text-align: center;
+}
+footer .container .sections p {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+footer .container .sections a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container .sections a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+footer .container .legal {
+  background-color: #333333;
+}
+footer .container .legal p {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=new-style.css.map */
