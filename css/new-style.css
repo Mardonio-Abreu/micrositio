@@ -14,26 +14,26 @@ header a {
   margin: 0 20px;
   vertical-align: middle;
 }
-header .container .pleca p img {
-  width: 95%;
+header .container-fluid .pleca p img {
+  width: 100%;
   height: 100%;
 }
-header .container .menu {
+header .container-fluid .menu {
   background-color: #333333;
 }
-header .container .seccion {
+header .container-fluid .seccion {
   background-color: #333333;
   color: #ab9d7a;
 }
-header .container .seccion h1 span .bullet-seccion {
+header .container-fluid .seccion h1 span .bullet-seccion {
   color: #7d3d4d;
 }
 
-footer .container .social-media {
+footer .container-fluid .social-media {
   padding: 15px;
   background-color: #bdaf8c;
 }
-footer .container .social-media a {
+footer .container-fluid .social-media a {
   text-decoration: none;
   border: solid 2px #333333;
   border-radius: 50%;
@@ -44,33 +44,33 @@ footer .container .social-media a {
   color: #333333;
   font-size: 16px;
 }
-footer .container .social-media a:visited {
+footer .container-fluid .social-media a:visited {
   color: #333333;
 }
-footer .container .sections {
+footer .container-fluid .sections {
   background-color: #333333;
 }
-footer .container .sections h5 {
+footer .container-fluid .sections h5 {
   text-align: center;
 }
-footer .container .sections p {
+footer .container-fluid .sections p {
   color: #fff;
   font-size: 0.8rem;
   line-height: 1.5rem;
   text-align: left;
 }
-footer .container .sections a {
+footer .container-fluid .sections a {
   text-decoration: none;
   color: #fff;
 }
-footer .container .sections a:visited {
+footer .container-fluid .sections a:visited {
   text-decoration: none;
   color: #fff;
 }
-footer .container .legal {
+footer .container-fluid .legal {
   background-color: #333333;
 }
-footer .container .legal p {
+footer .container-fluid .legal p {
   color: #fff;
   font-size: 0.8rem;
   text-align: center;
