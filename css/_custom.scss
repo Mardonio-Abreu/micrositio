@@ -24,7 +24,7 @@ html {
         position: relative;
         &::after {
             content:"";
-            height: 5px;
+            height: 3px;
             background: $primary;
             position: absolute;
             bottom: 0;

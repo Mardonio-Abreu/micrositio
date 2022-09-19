@@ -51,8 +51,10 @@
 @import "bootstrap/utilities/api";
 // scss-docs-end import-stack
 
+// Mobile menu
 @import "mobile-menu";
 
 
 // CUSTOM SITE STYLES
 @import "custom";
+@import "pages";

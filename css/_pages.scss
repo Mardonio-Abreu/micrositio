@@ -1,0 +1,38 @@
+.categories {
+  margin: 2rem 0;
+  .card {
+    background-size: cover;
+    background-position: center center;
+    height: 380px;
+    transition: all .3s;
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(125, 60, 77, 0.8);
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    &:hover{
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    @include media-breakpoint-down(sm){
+      height: 300px;
+    }
+  }
+  .card-1 {
+    background-image: url(../img/libros.jpg);
+  }
+  .card-2 {
+    background-image: url(../img/revista.jpg);
+  }
+  .card-3 {
+    background-image: url(../img/ebooks.jpg);
+  }
+  .card-4 {
+    background-image: url(../img/catalogo-h.jpg);
+  }
+
+  
+}
