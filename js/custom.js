@@ -3,7 +3,14 @@
 This code is created to display element's behavior. I'm not a JS expert so don't use it
 !!!!!
 */
-
+$(document).ready(function () {
+  setTimeout(() => {
+    $("body").addClass("loaded");
+    setTimeout(() => {
+      $("body").addClass("completed");
+    }, 310);
+  }, 1000);
+});
 
 (function () {
   'use strict';

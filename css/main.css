@@ -11208,6 +11208,16 @@ html {
   background-color: #333333;
 }
 
+body.loaded {
+  overflow: auto;
+}
+body.loaded .loader {
+  opacity: 0;
+}
+body.completed .loader {
+  display: none;
+}
+
 @media (max-width: 575.98px) {
   .iisunam {
     display: none;

@@ -1,6 +1,19 @@
 html {
     background-color: $dark;
 }
+body {
+    &.loaded {
+        overflow: auto;
+        .loader {
+            opacity: 0;
+        }
+    }
+    &.completed {
+        .loader {
+            display: none;
+        }
+    }
+}
 .iisunam {
     @include media-breakpoint-down(sm){
         display: none;
