@@ -1,0 +1,158 @@
+html {
+    background-color: $dark;
+}
+.iisunam {
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+}
+.header-logos-container {
+    display: flex;
+}
+// header
+@include media-breakpoint-up(sm){
+    .header-logos-container {
+        justify-content: space-between;
+    }
+    
+}
+@include media-breakpoint-up(md){
+    .header-logos-container {
+        padding-bottom: 1rem;
+    }
+    .header-logos-wrapper {
+        position: relative;
+        &::after {
+            content:"";
+            height: 5px;
+            background: $primary;
+            position: absolute;
+            bottom: 0;
+            left: #{calc($grid-gutter-width/2)};
+            width: calc(100% - #{calc($grid-gutter-width/2)});
+        }
+    }
+}
+
+.main-menu {
+    @include media-breakpoint-down(md){
+        display: none;
+    }
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+.mobile-btn {
+    align-items: center;
+    display: flex;
+    @include media-breakpoint-up(lg){
+        display: none;
+    }
+}
+
+.pleca {
+    width: 100%;
+    height: 79px;
+    background-image: url(../img/barra-textura.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.site-title {
+    h1 {
+        font-family: 'Aleo', serif;
+        margin: 0;
+    }
+    span {
+        font-size: 2rem;
+    }
+    padding: 1rem 0;
+}
+
+//footer
+.social-media {
+    padding: 15px;
+    display: inline-flex;
+    a {
+        text-decoration: none;
+        border: solid 2px $dark;
+        border-radius: 50%;
+        padding: 5px;
+        width: 35px;
+        height: 35px;
+        color: $dark;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .5rem;
+        transition: all 0.3s;
+        &:hover {
+            color: $primary;
+            border-color: $primary;
+        }
+        &:visited {
+            color: $dark;
+        }
+    }
+
+}
+.footer-legend {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+footer {
+    padding: 2rem 0 4rem;
+    h3 {
+        @include media-breakpoint-up(sm){
+            line-height: 2.5ex;
+            height: 5ex; /* 2.5ex for each visible line */
+        }
+    }
+    p {
+        font-size: .8rem;
+    }
+    line-height: 1.8;
+}
+.legal {
+    margin-top: 2rem;
+}
+@include media-breakpoint-down(md){
+    .footer-sm  {
+        text-align: center;
+    }
+    .footer-legend {
+        margin: 1rem 0 0 0;
+    }
+    footer {
+        padding: 3rem 0 6rem;
+    }
+    // .sections {
+    //     margin-bottom: 2rem;
+    // }
+    .sections div[class^="col-"]{
+        margin-bottom: 2rem;
+    }
+}
+@include media-breakpoint-down(sm){
+    footer,
+    .footer-sm  {
+        text-align: center;
+    }
+    .footer-sm {
+        padding: 1rem 0;
+    }
+    
+    .header-logos-container {
+        justify-content: center;
+    }
+}
+
+.menu {
+    opacity: 0;
+    @include media-breakpoint-down(md){
+        opacity: 1;
+    }
+} 
