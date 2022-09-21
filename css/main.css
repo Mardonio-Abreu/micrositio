@@ -11418,7 +11418,7 @@ footer p {
   font-weight: bold;
 }
 .categories .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   filter: grayscale(0%);
 }
 @media (max-width: 991.98px) {
@@ -11486,7 +11486,7 @@ footer p {
   max-width: calc(100% - 20px);
 }
 .card-item:hover img {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container-item {

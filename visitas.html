@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -14,58 +16,6 @@
 </head>
 
 <body class="cp">
-  <?php
-$servername = "localhost";
-$database = "db14";
-$username = "dbcuenta14";
-$password = "Cta.m1sql14";
-
-// Create connection
-
-$connection = mysqli_connect($servername, $username, $password, $database);
-
-$mensajeSuccess = "";
-
-if ($connection->connect_error) {
-  die("Connection failed: "
-      . $conn->connect_error);
-} 
-if(isset($_POST['submit'])){ // Fetching variables of the form which travels in URL
-  $name =  $_REQUEST['name'];
-  $email = $_REQUEST['email'];
-  $comments = $_REQUEST['comments'];
-  if($name !=''||$email !=''){
-    
-    $sqlquery = "INSERT INTO comments (user,email,comments) VALUES ('$name', '$email', '$comments')";
-   
-    if ($connection->query($sqlquery) === TRUE) {
-      $mensajeSuccess = "record inserted successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-    $_POST = array();
-
-  } else {
-    echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
-  }
-}
-$columns = ["user", "email", "comments"];
-
-// $fetchData = fetch_data($database, "comments", $columns);
-
-$query = "SELECT * FROM comments";
-
-
-$result = mysqli_query($connection, $query);  
-
-?>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-
   <div class="loader">
     <div id="loop" class="center"></div>
     <div id="bike-wrapper" class="center">
@@ -146,24 +96,23 @@ $result = mysqli_query($connection, $query);
           </h3>
         </div>
         <div class="col-md-8 pt-5">
-          <form class="row g-3" action="visitas.php" method="post">
+          <form class="row g-3">
             <div class="col-md-6">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail" name="email">
+              <input type="email" class="form-control" id="inputEmail">
             </div>
             <div class="col-md-6">
               <label for="inputName" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="inputName" name="name">
+              <input type="text" class="form-control" id="inputName">
             </div>
             <div class="col-md-12">
               <label for="inputComment" class="form-label">Ingrese su comentario</label>
-              <textarea class="form-control" id="inputComment" rows="3" name="comments"></textarea>
+              <textarea class="form-control" id="inputComment" rows="3"></textarea>
             </div>
             <div class="col-12">
-              <input class="btn btn-primary" name="submit" type="submit" value="Enviar">
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </form>
-          <h3 class="text-secondary text-center"><b><?php echo $mensajeSuccess; ?></b></h3>
         </div>
         <hr class="my-5">
         <div class="col-12">
@@ -176,29 +125,18 @@ $result = mysqli_query($connection, $query);
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Email</th>
-                <th scope="col">Comentario</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
               </tr>
             </thead>
             <tbody>
-            <?php
-
-if(mysqli_num_rows($result))
-{
-
-    while($row2 = mysqli_fetch_row($result))
-    {
-        echo '<tr>';
-        foreach ($row2 as $key=>$value)
-        {
-            echo '<td>',$value, '</td>';
-        }
-        echo '</tr>';
-    }
-}
-            ?>
-          
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -355,9 +293,3 @@ if(mysqli_num_rows($result))
 </body>
 
 </html>
-
-<?php
-
-$connection->close();
-
-?>
