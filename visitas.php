@@ -77,11 +77,13 @@ $result = mysqli_query($connection, $query);
       <div class="row header-logos-wrapper">
         <div class="col header-logos-container">
           <a href="#">
-            <img class="logo-unam" src="img/unam-logo.svg" alt="Logo UNAM">
-          </a>
-          <a href="#" class="iisunam">
-            <img class="logo-iis" src="img/logo-iis.svg" alt="Logo IISUNAM">
-          </a>
+                        <img class="logo-unam" src="img/unam-logo.svg" alt="Logo UNAM">
+                        <img class="logo-unam-mobile" src="img/unam-logo-mobile.svg" alt="Logo UNAM">
+                    </a>
+                    <a href="#" class="iisunam">
+                        <img class="logo-iis" src="img/logo-iis.svg" alt="Logo IISUNAM">
+                        <img class="logo-iis-mobile" src="img/logo-iis-mobile.svg" alt="Logo IISUNAM">
+                    </a>
         </div>
       </div>
       <div class="row main-menu">

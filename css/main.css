@@ -11233,14 +11233,45 @@ body.completed .loader {
   color: white !important;
 }
 
-.logo-unam,
-.logo-iis {
+.logo-iis,
+.logo-unam {
   height: 80px;
 }
+
 @media (max-width: 767.98px) {
-  .logo-unam,
-.logo-iis {
-    height: 60px;
+  .logo-iis {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .logo-unam {
+    display: none;
+  }
+}
+
+.logo-unam-mobile,
+.logo-iis-mobile {
+  height: 60px;
+}
+
+@media (min-width: 576px) {
+  .logo-unam-mobile {
+    display: none;
+  }
+}
+
+.logo-iis-mobile {
+  height: 60px;
+}
+@media (min-width: 768px) {
+  .logo-iis-mobile {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .logo-iis-mobile {
+    height: 80px;
   }
 }
 

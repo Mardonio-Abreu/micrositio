@@ -33,13 +33,36 @@ body {
         color:white!important;
     }
 }
-.logo-unam,
-.logo-iis
- {
+.logo-iis,
+.logo-unam {
     height: 80px;
+}
+.logo-iis {
     @include media-breakpoint-down(md){
-        height: 60px;
-
+        display: none;
+    }
+}
+.logo-unam {
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+}
+.logo-unam-mobile,
+.logo-iis-mobile {
+    height: 60px;
+}
+.logo-unam-mobile {
+    @include media-breakpoint-up(sm){
+        display: none;
+    }
+}
+.logo-iis-mobile {
+    height: 60px;
+    @include media-breakpoint-up(md){
+        display: none;
+    }
+    @include media-breakpoint-up(sm){
+        height: 80px;
     }
 }
 // header
