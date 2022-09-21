@@ -15,7 +15,7 @@
   <title>Micrositio de publicaciones</title>
 </head>
 
-<body class="item">
+<body class="cp">
   <div class="loader">
     <div id="loop" class="center"></div>
     <div id="bike-wrapper" class="center">
@@ -42,7 +42,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="libros.html">Libros</a>
+                <a class="nav-link" href="libros.html">Libros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="revistas.html">Revistas</a>
@@ -54,15 +54,15 @@
                 <a class="nav-link disabled" href="catalogo-historico.html">Catálogo histórico</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Sobre libros
                 </a>
                 <ul class="dropdown-menu">
                   <!-- <li><a class="dropdown-item" href="eventos.html">Eventos</a></li>
-                  <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>-->
+                  <li><a class="dropdown-item" href="noticias.html">Noticias</a></li> -->
                   <li><a class="dropdown-item" href="visitas.php">Libro de visitas</a></li>
-                  <li><a class="dropdown-item" href="video-resenas.html">Video reseñas</a></li>
+                  <li><a class="dropdown-item active" href="video-resenas.html">Video reseñas</a></li>
                   <li><a class="dropdown-item" href="como-publicar.html">Cómo públicar</a></li>
                 </ul>
               </li>
@@ -83,114 +83,46 @@
     <div class="container">
       <div class="row">
         <div class="seccion text-secondary">
-          <h1><span class="text-primary">&#x2022</span> Libros</h1>
+          <h1><span class="text-primary">&#x2022</span> Video reseñas</h1>
         </div>
       </div>
     </div>
   </section>
 
   <main>
-    <div class="container">
+
+    <div class="container container-item">
       <div class="row">
-        <div class="col">
-          <div class="searchbar">
-            <div>
-              <form action="">
-                <label for="fname">Buscar:</label>
-                <input type="text" id="fname" name="fname">
-              </form>
-            </div>
-            <div>
-              <a href="">1</a>|<a href="">2</a>|<a href="">3</a>|<a href="">4</a>|<a href="">5</a>|<a href="">></a>
-            </div>
+        <div class="col-md-8 mb-4">
+          <div class="item-details book-details">
+            <h1 class="text-secondary mb-4">
+              <b>
+                Tejiendo desde la contrahegemonía: medios, redes y TIC en América Latina
+              </b>
+            </h1>
+            <p>En este libro hay una variedad de voces que reflexionan sobre medios, redes y tecnologías de la comunicación desde la contrahegemonía. Aquí convergen las ideas y los pensamientos de autoras y autores que transitan entre espacios académicos, medios comunitarios, movimientos sociales, instituciones educativas, barrios y comunidades de América Latina. La obra se constituye a partir de un tejido de diálogos que muestran las luchas, las negociaciones y las derrotas presentes en diferentes proyectos comunicativos. Con este libro pretendemos contribuir a la democratización de los medios y a descentrar la atención que tienen los medios hegemónicos sustentados y favorecidos por las corporaciones globales y los Estados nacionales. Se espera que las y los lectores disfruten de este volumen y encuentren en sus páginas ideas inspiradoras para continuar tejiendo desde la contrahegemonía.
+            </p>
+            <p>
+              <b>Compiladores:</b> Nava Morales, Elena y Guilherme Gitahy de Figueiredo
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid item-detail-img" src="img/books/libro_tejiendo_ptda-gde.jpg" alt="Tejiendo desde la contrahegemonía">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="video-container">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gyyTAZXDEEg?controls=0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
-    <div class="container container-items">
-      <div class="row">
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-1" href="libro-libaneses.html">
-            <img class="card-img-top" src="img/books/libro_libaneses_ptda-gde.jpg"
-              alt="Libaneses | Hechos e imaginario de los inmigrantes en México ">
-            <div class="card-body">
-              <h6 class="card-title">Libaneses</h6>
-              <p class="card-text">Hechos e imaginario de los inmigrantes en México</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-2" href="libro-charles-tilly.html">
-            <img class="card-img-top" src="img/books/libro_chrales_tilly_ptda-gde.jpg"
-              alt="Charles Tilly | Sobre pviolencia colectiva, política contenciosa y cambio social">
-            <div class="card-body">
-              <h6 class="card-title">Charles Tilly</h6>
-              <p class="card-text">Sobre violencia colectiva, política contenciosa y cambio social</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-3" href="#">
-            <img class="card-img-top" src="img/books/libro_formas_de_creer_ptda-gde.jpg"
-              alt="lorem ipsum | Ut enim ad minim veniam">
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum</h6>
-              <p class="card-text">Duis aute irure dolor in reprehenderit in</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-3" href="#">
-            <img class="card-img-top" src="img/books/libro_las_culturas_hoy_ptda-gde.jpg"
-              alt="lorem ipsum | Ut enim ad minim veniam">
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum</h6>
-              <p class="card-text">Duis aute irure dolor in reprehenderit in</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-3" href="#">
-            <img class="card-img-top" src="img/books/libro_memorias_agrarias_ptda-gde.jpg"
-              alt="lorem ipsum | Ut enim ad minim veniam">
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum</h6>
-              <p class="card-text">Duis aute irure dolor in reprehenderit in</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-3" href="#">
-            <img class="card-img-top" src="img/books/libro_religion_genero_sexualidad_ptda-gde.jpg"
-              alt="lorem ipsum | Ut enim ad minim veniam">
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum</h6>
-              <p class="card-text">Duis aute irure dolor in reprehenderit in</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-3" href="#">
-            <img class="card-img-top" src="img/books/libro_signos_de_identidad_ptda-gde.jpg"
-              alt="lorem ipsum | Ut enim ad minim veniam">
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum</h6>
-              <p class="card-text">Duis aute irure dolor in reprehenderit in</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-3">
-          <a class="card card-item book-3" href="#">
-            <img class="card-img-top" src="img/books/libro_inseguridad_alimentaria_ptda-gde.jpg"
-              alt="lorem ipsum | Ut enim ad minim veniam">
-            <div class="card-body">
-              <h6 class="card-title">Lorem ipsum</h6>
-              <p class="card-text">Duis aute irure dolor in reprehenderit in</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+
   </main>
 
   <div class="footer-sm bg-secondary">
@@ -292,7 +224,7 @@
         <li class="menu__group">
           <a class="menu__link r-link" href="index.html">Inicio</a>
         </li>
-        <li class="menu__group active">
+        <li class="menu__group">
           <a class="menu__link r-link" href="libros.html">Libros</a>
         </li>
         <li class="menu__group">
@@ -312,8 +244,10 @@
             <!-- <li class="menu__group"><a class="menu__link r-link" href="eventos.html">Eventos</a></li>
             <li class="menu__group"><a class="menu__link r-link" href="noticias.html">Noticias</a></li> -->
             <li class="menu__group"><a class="menu__link r-link" href="visitas.php">Libro de visitas</a>
-            <li class="menu__group"><a class="menu__link r-link" href="video-resenas.html">Video reseñas</a></li>
-            <li class="menu__group"><a class="menu__link r-link" href="como-publicar.html">Cómo públicar</a></li>
+            <li class="menu__group active"><a class="menu__link r-link" href="video-resenas.html">Video reseñas</a>
+            </li>
+            <li class="menu__group"><a class="menu__link r-link" href="como-publicar.html">Cómo públicar</a>
+            </li>
           </ul>
         </li>
       </ul>

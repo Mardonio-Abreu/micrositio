@@ -116,6 +116,11 @@ $result = mysqli_query($connection, $query);
                   <li><a class="dropdown-item" href="como-publicar.html">Cómo públicar</a></li>
                 </ul>
               </li>
+              <li>
+                <button type="button" class="btn btn-link btn-menu">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </li>
             </ul>
           </div>
         </nav>
