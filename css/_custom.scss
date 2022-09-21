@@ -55,6 +55,13 @@ body {
     .navbar-collapse {
         justify-content: center;
     }
+    .navbar-nav {
+        width: 100%;
+        justify-content: space-between;
+        @include media-breakpoint-up(lg){
+            margin: 0 100px;
+        }
+    }
 }
 
 .mobile-btn {

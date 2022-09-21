@@ -154,7 +154,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -8033,7 +8033,7 @@ textarea.form-control-lg {
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
 }
 
 .fst-italic {
@@ -11259,6 +11259,15 @@ body.completed .loader {
 .main-menu .navbar-collapse {
   justify-content: center;
 }
+.main-menu .navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .main-menu .navbar-nav {
+    margin: 0 100px;
+  }
+}
 
 .mobile-btn {
   align-items: center;
@@ -11375,6 +11384,16 @@ footer p {
   }
 }
 
+.container-carousel {
+  margin-top: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  #carouselExampleIndicators {
+    display: none;
+  }
+}
+
 .categories {
   margin: 2rem 0;
 }
@@ -11403,7 +11422,7 @@ footer p {
 }
 @media (max-width: 575.98px) {
   .categories .card {
-    height: 300px;
+    height: 180px;
   }
 }
 .categories .card-1 {
@@ -11445,16 +11464,20 @@ footer p {
   margin-bottom: 2rem;
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-item .card-body {
-  pading-top: 0;
+  width: 100%;
 }
 .card-item .card-title {
   font-weight: 600;
+  color: #C4B18B;
 }
 .card-item img {
   transition: all 0.3s;
-  margin: 0 auto;
+  max-width: calc(100% - 20px);
 }
 .card-item:hover img {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -11469,6 +11492,9 @@ footer p {
   padding-bottom: 2rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid #C3C3C3;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .item-detail-links p {
@@ -11480,4 +11506,34 @@ footer p {
 }
 .item-detail-links a {
   text-decoration: none;
+}
+
+.cp-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/banner_como_publicar.jpg);
+  background-size: cover;
+}
+
+.pdf-links a {
+  color: #C4B18B;
+  text-decoration: none;
+}
+.pdf-links a img {
+  width: 1rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }/*# sourceMappingURL=main.css.map */
