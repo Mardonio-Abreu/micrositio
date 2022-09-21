@@ -179,7 +179,6 @@ figcaption a {
     border: solid 2px #333333;
     border-radius: 50%;
     padding: 10px;
-    font-size: 1.5rem;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -369,9 +368,7 @@ footer {
 }
 
 .book2 {
-
     grid-area: book2;
-
 }
 
 .book3 {
@@ -394,15 +391,11 @@ footer {
 }
 
 .book7 {
-
     grid-area: book7;
-
 }
 
 .book8 {
-
     grid-area: book8;
-
 }
 
 //News
@@ -421,7 +414,6 @@ footer {
 
 .news {
     grid-area: news;
-
     h3 {
         margin: 10px;
         font-family: 'aleobold';
@@ -431,7 +423,6 @@ footer {
 
 .notice {
     grid-area: notice;
-
     h3 {
         margin: 10px;
         font-family: 'aleobold';
@@ -442,28 +433,16 @@ footer {
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-
-
     .carousel {
-
         img {
-
             width: 97%;
             height: auto;
-
-
         }
-
-
     }
-
     .bookshelf {
         .card-text {
-
             font-size: 16px;
-
         }
-
         .card {
             width: 200px;
             margin-left: 15%;
@@ -480,34 +459,21 @@ footer {
 }
 
 @media (max-width: 480px) {
-
-
-
     .carousel {
-
         img {
-
             width: 50%;
             height: auto;
-
         }
-
-
     }
 
     .bookshelf {
-
         .card-text {
-
             font-size: 16px;
-
         }
-
         .card {
             width: 200px;
             margin-left: 15%;
         }
-
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% ;
