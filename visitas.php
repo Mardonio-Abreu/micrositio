@@ -27,10 +27,10 @@
       <div class="row header-logos-wrapper">
         <div class="col header-logos-container">
           <a href="#">
-            <img src="img/unam_head_sitioiis2020.png" alt="Logo UNAM">
+            <img class="logo-unam" src="img/unam-logo.svg" alt="Logo UNAM">
           </a>
           <a href="#" class="iisunam">
-            <img src="img/iis_head_2021.png" alt="Logo IISUNAM">
+            <img class="logo-iis" src="img/logo-iis.svg" alt="Logo IISUNAM">
           </a>
         </div>
       </div>

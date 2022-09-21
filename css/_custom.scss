@@ -15,25 +15,38 @@ body {
         }
     }
 }
-.iisunam {
-    @include media-breakpoint-down(sm){
-        display: none;
-    }
-}
+// .iisunam {
+//     @include media-breakpoint-down(sm){
+//         display: none;
+//     }
+// }
 .header-logos-container {
     display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+
+}
+.btn-menu {
+    color: var(--bs-nav-link-color);
+    &:hover {
+        color:white!important;
+    }
+}
+.logo-unam,
+.logo-iis
+ {
+    height: 80px;
+    @include media-breakpoint-down(md){
+        height: 60px;
+
+    }
 }
 // header
 @include media-breakpoint-up(sm){
-    .header-logos-container {
-        justify-content: space-between;
-    }
     
 }
 @include media-breakpoint-up(md){
-    .header-logos-container {
-        padding-bottom: 1rem;
-    }
     .header-logos-wrapper {
         position: relative;
         &::after {
@@ -164,10 +177,6 @@ footer {
     }
     .footer-sm {
         padding: 1rem 0;
-    }
-    
-    .header-logos-container {
-        justify-content: center;
     }
 }
 

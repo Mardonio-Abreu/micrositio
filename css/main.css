@@ -11219,25 +11219,32 @@ body.completed .loader {
   display: none;
 }
 
-@media (max-width: 575.98px) {
-  .iisunam {
-    display: none;
-  }
-}
-
 .header-logos-container {
   display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
 }
 
-@media (min-width: 576px) {
-  .header-logos-container {
-    justify-content: space-between;
+.btn-menu {
+  color: var(--bs-nav-link-color);
+}
+.btn-menu:hover {
+  color: white !important;
+}
+
+.logo-unam,
+.logo-iis {
+  height: 80px;
+}
+@media (max-width: 767.98px) {
+  .logo-unam,
+.logo-iis {
+    height: 60px;
   }
 }
+
 @media (min-width: 768px) {
-  .header-logos-container {
-    padding-bottom: 1rem;
-  }
   .header-logos-wrapper {
     position: relative;
   }
@@ -11371,9 +11378,6 @@ footer p {
   .footer-sm {
     padding: 1rem 0;
   }
-  .header-logos-container {
-    justify-content: center;
-  }
 }
 .menu {
   opacity: 0;
@@ -11402,6 +11406,7 @@ footer p {
   background-position: center center;
   height: 380px;
   transition: all 0.3s;
+  filter: grayscale(100%);
 }
 .categories .card figcaption {
   position: absolute;
@@ -11414,6 +11419,7 @@ footer p {
 }
 .categories .card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  filter: grayscale(0%);
 }
 @media (max-width: 991.98px) {
   .categories .card {
